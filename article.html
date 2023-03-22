@@ -1,0 +1,127 @@
+<!--
+ Copyright 2016 Google Inc.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="amp_favicon.png">
+
+    <title>News Article</title>
+    
+    <!-- <link href="base.css" rel="stylesheet" /> -->
+    <!-- Required Core Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <!-- Optional Theme Stylesheet -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> -->
+    <script src="base.js"></script>
+    <style>
+      body {
+        padding: 0;
+        margin:0;
+      }
+      img {
+        max-width: 100%;
+        min-width: 100%;
+      }
+
+      .image-section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+      }
+
+      .image-section figure {
+        flex-basis: 30%;
+      }
+
+      .image-section figure img {
+        max-height: 230px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="img/1.jpeg"></li>
+            <li class="glide__slide"><img src="img/5.jpg"></li>
+            <li class="glide__slide"><img src="img/7.jpg"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="image-section">
+
+      <figure>
+        <img src="img/1.jpeg" alt="">
+        <figcaption>
+          <h3>
+            The Ornamental
+          </h3>
+          <p>
+
+          </p>
+        </figcaption>
+      </figure>
+
+      <figure>
+          <img src="img/3.jpeg" alt="">
+          <figcaption>
+            <h3>
+              The Jarnamental
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at consectetur eros. Nam ac convallis tortor, ut pharetra ex. Morbi rhoncus leo ut nisi mattis, vitae feugiat tellus porttitor. Sed ullamcorper, diam mollis dapibus euismod, leo est efficitur tellus, id luctus tortor ligula at nunc. Nunc sem odio, ultricies vel sapien nec, pulvinar venenatis tortor. Donec eu maximus turpis. Proin id velit eu sem accumsan placerat ut vitae turpis. Cras elit lorem, mattis ac maximus et, mattis vitae magna.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure>
+            <img src="img/4.jpeg" alt="">
+            <figcaption>
+              <h3>
+                the FarMetal
+              </h3>
+              <p>
+                  Nulla at augue pulvinar, semper velit eu, scelerisque sapien. Duis in commodo lectus, ac aliquam mi. Nunc sed aliquet justo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque viverra ipsum quis leo efficitur, imperdiet rhoncus purus egestas. Sed sit amet neque nec lacus tempor rutrum ut at odio. Mauris eleifend urna ac ante viverra, vel imperdiet nulla condimentum. Phasellus nec scelerisque dui. Aenean elit est, bibendum sed consequat vel, laoreet quis augue. Cras dolor nunc, pulvinar at tortor nec, efficitur faucibus quam. Sed pulvinar a arcu vitae mattis.
+              </p>
+            </figcaption>
+          </figure>
+
+    </section>
+    <header>
+      News Site
+    </header>
+    <article>
+      <h1>Article Name</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas tortor sapien, non tristique ligula accumsan eu.</p>
+
+      <img src="mountains.jpg">
+
+
+
+    </article>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+      new Glide('.glide').mount()
+    </script>
+  </body>
+</html>

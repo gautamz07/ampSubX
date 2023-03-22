@@ -1,0 +1,14 @@
+{
+  "name": "amp-demo2",
+  "version": "1.0.0",
+  "description": "This folder contains the source code for a Google I/O 2016 codelab.",
+  "main": "base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
+  }
+}
